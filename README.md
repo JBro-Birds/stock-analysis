@@ -18,7 +18,9 @@ A key component of the refractor script is defining the array `Dim tickers(12) A
 
 Next a `for` loop determines the dataset range `For i = 2 To RowCount` (with `Rowcount` defined as `RowCount = Cells(Rows.Count, "A").End(xlUp).Row`) and pulls the volume data by `tickerIndex` with the following formula:  `tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value`.  Next an `if-then` block determines the starting and ending rows for each `tickerIndex` and when to move on to the next `tickerIndex` in order to pull the `tickerStartingPrices(i)` and `tickerEndingPrices(i)`.  These formulas are as follows:  
 `If Cells(i - 1, 1).Value <> tickers(tickerIndex) And Cells(i, 1).Value = tickers(tickerIndex) Then tickerStartingPrices(tickerIndex) = Cells(i, 6).Value` 
+
 `If Cells(i + 1, 1).Value <> tickers(tickerIndex) Cells(i, 1).Value = tickers(tickerIndex) Then tickerEndingPrices(tickerIndex) = Cells(i, 6).Value`.
+
 `If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers(tickerIndex) Then tickerIndex = tickerIndex + 1`
 
 ### Original Script Runtimes
