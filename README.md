@@ -11,8 +11,8 @@ with a much larger dataset code refactoring needs to be performed to determine i
 
 ## Results
 
-
-
+### Coding
+For the front-end user there are two macro buttons on the analysis worksheet; one for clearing data on the worksheet of a prior run and one for running the analysis for a given year.  The macro button asking the user for what year the analysis is for is an input box in which the user needs to enter a year.  The main part of the clear data script is `Cells.Clear` and for the the year selection input box script it is `yearValue = InputBox("What year would you like to run the analysis on?")`.
 
 ### Original Script Runtimes
 The original script runtimes for 2017 and 2018 are as follows:
