@@ -14,7 +14,7 @@ with a much larger dataset code refactoring needs to be performed to determine i
 ### Coding
 For the front-end user there are two macro buttons on the analysis worksheet; one for clearing data on the worksheet of a prior run and one for running the analysis for a given year.  The macro button asking the user for what year the analysis is for is an input box in which the user needs to enter a year.  The main part of the clear data script is `Cells.Clear` and for the the year selection input box script it is `yearValue = InputBox("What year would you like to run the analysis on?")`.  After the user enters a year and clicks 'enter' a runtime timing variable `startTime = Timer` starts running as the starting point of the total process time that is shown at the end of the script; in addition the worksheet header in cell A1 is updated to include the year entered. 
 
-
+A key component of the refractor script is defining the array `Dim tickers(12) As String` and initializing the 12 tickers; starting with the first ticker `tickers(0) = "AY"` and ending with the final ticker `tickers(11) = "VSLR"`.  Three output arrays are defined for the use in `for` loops and `if-then` statements in order for data to be stored as the script runs through the ticker index `tickerIndex = 0`; the three arrays are as follows:  `Dim tickerVolumes(12) As Long`, `Dim tickerStartingPrices(12) As Single`, `Dim tickerEndingPrices(12) As Single`.  
 
 ### Original Script Runtimes
 The original script runtimes for 2017 and 2018 are as follows:
