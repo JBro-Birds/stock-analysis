@@ -7,5 +7,13 @@ original stock analysis project can be refactored to run a much larger dataset m
 
 ### Purpose
 The customer wants to expand the research to cover the entire stock market.  Prior coding was sufficient to execute the smaller dataset for runtime-purposes, but
-with a much larger dataset code refactoring needs to be performed to improve execution runtime.
+with a much larger dataset code refactoring needs to be performed to determine if the executed runtime can be improved.  If refactoring is successful the runtime will run faster and the customer will remain happy. 
+
+## Results
+
+###
+
+## Summary
+
+###
 
