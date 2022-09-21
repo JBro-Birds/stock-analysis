@@ -23,6 +23,10 @@ Next a `for` loop determines the dataset range `For i = 2 To RowCount` (with `Ro
 
 `If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers(tickerIndex) Then tickerIndex = tickerIndex + 1`
 
+After pulling the array data by `tickerIndex` a `for` loop is run to populate the defined and corresponding cells in the "All Stocks Analysis" worksheet. These values are for `tickers(i)`, `tickerVolume(i) and "Return" formulated as `tickerEndingPrices(i) / tickerStartingPrices(i) - 1`.
+
+The script runs through a number of formatting statements and then the `endTime = Timer` is triggered.  The `endTime` less `startTime` is the total elasped time of the `AllStocksAnalysisRefactored()` execution and a messagebox will appear to the end user stating the execution time.  `MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)`.
+
 ### Original Script Runtimes
 The original script runtimes for 2017 and 2018 are as follows:
 
