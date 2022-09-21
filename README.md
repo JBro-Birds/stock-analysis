@@ -53,6 +53,7 @@ The original script runtimes for 2017 and 2018 are as follows:
 ## Summary
 
 ### Advantages and disadvantages of refactoring code in general
+The advantages of refactoring code in general is that it helps make a program run faster, adds efficencies in storage and helps with potential debugging.  The disadvantages could be when much time is spent on refactoring for little gain in speed or efficiences or the refactoring code contains bugs.
 
 
 ### Advantages and disadvantages of the original and refactored VBA script
