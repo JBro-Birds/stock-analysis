@@ -15,6 +15,7 @@ with a much larger dataset code refactoring needs to be performed to determine i
 
 
 ### Original Script Runtimes
+The original script runtimes for 2017 and 2018 are as follows:
 
 #### 2017
 ![2017 Stocks - Original Script](https://raw.githubusercontent.com/JBro-Birds/stock-analysis/master/Resources/VBA_Challenge_2017_OriginalScript.png)
