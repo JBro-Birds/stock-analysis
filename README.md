@@ -52,5 +52,8 @@ The original script runtimes for 2017 and 2018 are as follows:
 
 ## Summary
 
-###
+### Advantages and disadvantages of refactoring code in general
+
+
+### Advantages and disadvantages of the original and refactored VBA script
 
