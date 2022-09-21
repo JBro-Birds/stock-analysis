@@ -11,6 +11,14 @@ with a much larger dataset code refactoring needs to be performed to determine i
 
 ## Results
 
+
+
+
+
+
+![2017 Stocks - Original Script](https://raw.githubusercontent.com/JBro-Birds/stock-analysis/master/resources/VBA_Challenge_2017_OriginalScript.png)
+
+
 ###
 
 ## Summary
